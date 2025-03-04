@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <div class="max-w-4xl mx-auto py-8">
+        <h1 class="text-3xl font-bold mb-6 text-center">Notícias do Dia</h1>
+        
+        <div class="flex space-x-4 mb-6">
+            <!-- Campo de Pesquisa -->
+            <div class="flex-1">
+                <label for="search" class="block text-lg font-medium text-gray-700">Pesquisar Notícias:</label>
+                <input id="search" type="text" class="mt-2 px-4 py-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Digite um termo de pesquisa">
+            </div>
+        
+            <!-- Campo para selecionar data -->
+            <div class="flex-1">
+                <label for="date" class="block text-lg font-medium text-gray-700">Selecione a Data:</label>
+                <input id="date" type="date" class="mt-2 px-4 py-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+        
+            <!-- Dropdown de idiomas -->
+            <div class="flex-1">
+                <label for="language" class="block text-lg font-medium text-gray-700">Selecione o Idioma:</label>
+                <select id="language" class="mt-2 px-4 py-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="pt">Português</option>
+                    <option value="en">Inglês</option>
+                    <option value="es">Espanhol</option>
+                    <option value="fr">Francês</option>
+                    <option value="de">Alemão</option>
+                    <option value="it">Italiano</option>
+                    <!-- Adicione mais idiomas conforme necessário -->
+                </select>
+            </div>
+        </div>
+        
+
+        <div id="news-container" class="space-y-6">
+            <!-- As notícias serão carregadas aqui -->
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
